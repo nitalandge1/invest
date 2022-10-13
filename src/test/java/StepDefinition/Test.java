@@ -21,6 +21,7 @@ public class Test {
 	@And("open App")
 	public void open_app() {
 		driver.get("https://kite.zerodha.com/");
+		System.out.println("i am opening");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	   
